@@ -28,10 +28,10 @@ time.sleep(5)
 
 # Bot will input both email and password, then login. PLEASE PLACE INFO IN BLANK QUOTATION MARKS!!!
 email = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "sign-in-email")))
-email.send_keys("K.morales0331@gmail.com")
+email.send_keys("{email address}")
 
 password = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div/div[1]/div/div[1]/div[3]/div/div/div/div[1]/div/div/div/div/div[3]/div/div[4]/div/section/div/section/form/div[2]/div/div[1]/label/div[2]/div/input")))
-password.send_keys("ScrubLord13")
+password.send_keys("{password}")
 
 signin_confirm = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div/div[1]/div/div[1]/div[3]/div/div/div/div[1]/div/div/div/div/div[3]/div/div[4]/div/section/div/section/form/div[5]/button ")))
 signin_confirm.click()
@@ -47,7 +47,7 @@ delivery_cont_two.click()
 time.sleep(2)
 
 cvv_info = WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.ID, "cvv-confirm")))
-cvv_info.send_keys("936")
+cvv_info.send_keys("{cvv}")
 
 review_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH,
     "/html/body/div[1]/div/div[1]/div/div[1]/div[3]/div/div/div/div[3]/div[1]/div[2]/div/div/div/div[3]/div[2]/div/button")))
